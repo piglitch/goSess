@@ -19,4 +19,4 @@ func main()  {					// main function is executed by default when we run the main 
 	fmt.Print(k)
 }
  // *1 even though I declared the var Age and assigned its value in the package level, the output will show the value of var Age that is decclared inside the main function
- // This hhappens because the value of the var declared inside the function takes precedence.
+ // This hhappens because the value of the var declared inside the function takes precedence. This is called SHADOWING: https://www.includehelp.com/golang/what-is-shadowing-in-go-language.aspx

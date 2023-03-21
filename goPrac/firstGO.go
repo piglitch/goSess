@@ -5,6 +5,7 @@ var k int = 45 			// Declared in the package level. *1
 var Age int = 33
 
 func main()  {					// main function is executed by default when we run the main package.
+	fmt.Println(Age)			// Can show the value of Age despite the Shadowing(see Note1) if we print its value before assigning the new value.
 	var Name string = "Avi"     // Standard way of decclaring the variables.
 	var Age int32 = 22
 
@@ -18,5 +19,5 @@ func main()  {					// main function is executed by default when we run the main 
 	println()
 	fmt.Print(k)
 }
- // *1 even though I declared the var Age and assigned its value in the package level, the output will show the value of var Age that is decclared inside the main function
+ // Note1: *1 even though I declared the var Age and assigned its value in the package level, the output will show the value of var Age that is decclared inside the main function
  // This hhappens because the value of the var declared inside the function takes precedence. This is called SHADOWING: https://www.includehelp.com/golang/what-is-shadowing-in-go-language.aspx

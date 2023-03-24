@@ -14,5 +14,7 @@ func bitshift(){
 	a:=8
 	fmt.Println(a<<3)
 	fmt.Println(a>>3)
+	fmt.Println(a>>2)
+	fmt.Println(a<<2)
 }
 

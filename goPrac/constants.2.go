@@ -16,7 +16,7 @@ const(
 )
 
 func main(){
-	var roles byte = isAdmin | canSeeFinancials | canSeeNorthAmerica
+	var roles byte = isAdmin | canSeeFinancials | canSeeNorthAmerica		// bitwise OR "|"
 	fmt.Printf("%b\n", roles)
-	fmt.Printf("%v", isAdmin & roles == isAdmin)
+	fmt.Printf("%v", isAdmin & roles == isAdmin)		// bitwise AND "&"
 }

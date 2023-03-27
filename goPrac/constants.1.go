@@ -2,14 +2,18 @@ package main
 import ("fmt")
 
 const(
-	catSpecialist = iota
-	dogSpecialist
-	snakeSpecialist
+	_ = iota
+	KB = 1 << (10*iota)
+	MB
+	GB
+
 )
 
 func main(){
-	var specialstType int
-	fmt.Printf("%v\n", specialstType == catSpecialist)
-	fmt.Println(dogSpecialist)
-}
 
+fileSize := 4000000000.
+fmt.Printf("%.2f GB\n", fileSize/GB)
+fmt.Println(KB,GB)
+
+
+}

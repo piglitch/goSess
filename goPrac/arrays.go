@@ -7,6 +7,7 @@ func main(){
 	fmt.Printf("Students: %v\n", students)
 	arrayOfArrays()
 	slice()
+	slack()
 }
 
 func arrayOfArrays(){
@@ -25,3 +26,9 @@ func slice(){
 	fmt.Println(a,b,c,d,e) 
 }
 
+func slack(){
+	a:= []int{1,2,3,4,6,7,8,9}
+	fmt.Println(a)
+	b:= append(a[:3], a[4:]...)			// To remove 4 from thee array
+	fmt.Println(b)
+}

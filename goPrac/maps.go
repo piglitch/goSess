@@ -12,5 +12,6 @@ func main(){
 		"Sancho": 23,
 	}
 	nameAge["Bruno"] = 28
+	delete(nameAge, "Bruno")
 	fmt.Println(nameAge)
 }

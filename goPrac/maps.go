@@ -13,6 +13,8 @@ func main(){
 	}
 	nameAge["Bruno"] = 28
 	delete(nameAge, "Bruno")
-	pop, ok := nameAge["Sancho"] //Using ok we can see if the value we popped does or does not belong to the map.
+	pop, ok := nameAge["Sancho"] //Using ok  we can see if the value we popped does or does not belong to the map.
+	fmt.Println(nameAge)
 	fmt.Println(pop, ok)
+	
 }

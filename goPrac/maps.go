@@ -4,7 +4,8 @@ import (
 )
 
 func main(){
-	nameAge := map[string]int{
+	nameAge := make(map[string]int)
+	nameAge = map[string]int{
 		"Rashy": 25,
 		"Martial": 27,
 		"Garnacho": 18,

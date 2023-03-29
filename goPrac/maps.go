@@ -11,5 +11,6 @@ func main(){
 		"Garnacho": 18,
 		"Sancho": 23,
 	}
-	fmt.Println(nameAge["Martial"])
+	nameAge["Bruno"] = 28
+	fmt.Println(nameAge)
 }

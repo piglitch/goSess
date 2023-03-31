@@ -5,6 +5,7 @@ import (
 
 func main(){
 	var guess int
+	var cont string
 	number:= 50
 	fmt.Print("Take a guess: ")
 	fmt.Scan(&guess)
@@ -18,4 +19,12 @@ func main(){
 	if number < guess {
 		fmt.Println("Too high")
 	}
+	fmt.Print("Continue? y/n: ")
+	fmt.Scan(&cont)
+	if cont == "y" {
+		main()		
+	}	else{	fmt.Println("Thanks!")
+		
+	}
+
 }

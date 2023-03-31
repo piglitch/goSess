@@ -11,11 +11,11 @@ func main(){
 
 	if number > guess  {
 		fmt.Println("Too low")		
+	}	
+	if number == guess {
+		fmt.Println("You got it!")
 	}
 	if number < guess {
 		fmt.Println("Too high")
-	}
-	else {
-		
 	}
 }

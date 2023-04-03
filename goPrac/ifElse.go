@@ -26,5 +26,22 @@ func main(){
 	}	else{	fmt.Println("Thanks!")
 		
 	}
+	typeSwitch()
 
+}
+
+func typeSwitch(){
+	var i interface{} = [3]int{}
+	switch i.(type){
+	case int:
+		fmt.Println("i is an int")
+	case float64:
+		fmt.Println("i is float64")
+	case string:
+		fmt.Println("i is string")
+	case [3]int:
+		fmt.Println("array of 3 integers")
+	default:
+		fmt.Println("i is another type")	 			
+	}
 }

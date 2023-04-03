@@ -12,6 +12,7 @@ func main(){
 		fmt.Println(i)
 	}
 	doWh()
+	nest()
 }
 
 // Using if statement to mimic do while loop
@@ -26,4 +27,17 @@ func doWh(){
 		}
 	}
 	
+}
+
+
+func nest(){
+Loop:	
+	for i := 1; i <= 3; i++{
+		for j:=1; j <= 3; j++{
+			fmt.Println(i*j)
+			if i*j > 3{
+				break Loop
+			}
+		}
+	}
 }

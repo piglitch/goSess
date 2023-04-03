@@ -5,8 +5,11 @@ import (
 )
 
 func main(){
-	for i:=0; i<5; i++{
-		fmt.Println("name's bond")
+	for i:=0; i<10; i++{
+		if i%2 != 0{	//To only print even numbers
+			continue
+		}
+		fmt.Println(i)
 	}
 	doWh()
 }
@@ -16,7 +19,7 @@ func main(){
 func doWh(){
 	i:=0
 	for{
-		fmt.Println("Name's bond")
+		fmt.Println(i)
 		i++
 		if i == 7 {
 			break			

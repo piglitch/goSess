@@ -5,7 +5,7 @@ import (
 
 type Device struct{
 	name string
-	wireless boolif
+	wireless bool
 }
 
 type mobilePhone struct{

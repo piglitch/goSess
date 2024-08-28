@@ -1,5 +1,5 @@
 <h1> It's time to learn GOOOOOOOOO!!! 🏃‍♂️‍➡️</h1>
 
-##Key learnings:
+## Key learnings:
 <ul>To use js on the client side, you need to serve the js file on a certain route. This route will make the js file available to html.</ul>
 
